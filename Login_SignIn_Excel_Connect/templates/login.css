@@ -1,0 +1,89 @@
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.30)),url(bike.png);
+    background-size: cover;
+    background-position: center;
+}
+.sign{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background-color: rgb(168, 91, 91);
+    height: 400px;
+    width: 420px;
+    background-color: rgba(45, 48, 57, 0.5);
+    border-radius: 15px;
+    border-color: aqua;
+    
+    
+    
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+input
+{
+    height: 45px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgba(145, 148, 147, 0.9);
+    border: none;
+    padding-left: 30px;
+    
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+button{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border-color: black;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+}
+
+button:hover {
+    background-color: #3a3d48; /* Change the background color on hover */
+    cursor: pointer;
+    
+    
+}
+
+.sign a{
+    position: absolute;
+    left: 36%;
+    top: 210;
+    background-color: white;
+    border: 10px solid;
+    border-width: 1px ;
+    font-family: sans-serif;
+    border-color: white;
+   
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.8s ease;;
+
+}
+.sign a:hover{
+    background-color:lightgreen;
+}
+
+input::placeholder {
+    color: #100f0f;
+}
