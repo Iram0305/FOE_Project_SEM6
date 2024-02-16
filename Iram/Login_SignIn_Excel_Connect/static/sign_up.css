@@ -1,30 +1,27 @@
-.bg{
+.image{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.30)),url(bike.png);
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.30)),url("img/car\ 3.png");
     background-size: cover;
     background-position: center;
 }
-.sign{
+
+.login{
     position: absolute;
     top: 20%;
     left: 35%;
-    background-color: rgb(168, 91, 91);
-    height: 400px;
+    background-color: rgb(223, 220, 220);
+    height: 495px;
     width: 420px;
-    background-color: rgba(45, 48, 57, 0.5);
-    border-radius: 15px;
-    border-color: aqua;
-    
-    
+    background-color: rgba(65, 64, 64, 0.5);
+    border-radius: 20px;
     
 }
 
 h3{
     font-size: 20px;
+    font-style: italic;
     text-align: center;
-    font-size: large;
-    font-family:'Times New Roman', Times, serif;
 }
 
 input
@@ -34,13 +31,7 @@ input
     border-radius: 5px;
     background-color: rgba(145, 148, 147, 0.9);
     border: none;
-    padding-left: 30px;
     
-}
-
-.input-group {
-    margin-bottom: 20px;
-    width: 70%;
 }
 
 button{
@@ -56,13 +47,12 @@ button{
 }
 
 button:hover {
-    background-color: #3a3d48; /* Change the background color on hover */
+    background-color: #666565; /* Change the background color on hover */
     cursor: pointer;
-    
     
 }
 
-.sign a{
+.login a{
     position: absolute;
     left: 36%;
     top: 210;
@@ -80,10 +70,17 @@ button:hover {
     transition: background-color 0.8s ease;;
 
 }
-.sign a:hover{
+.login a:hover{
     background-color:lightgreen;
 }
 
 input::placeholder {
     color: #100f0f;
+}
+
+marquee{
+    position: absolute;
+    top: 10%;
+    color:rgb(201, 198, 198);
+    font-size: 30px;
 }
