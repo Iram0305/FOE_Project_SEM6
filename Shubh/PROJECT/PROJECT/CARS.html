@@ -1,0 +1,591 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <link rel="stylesheet" href="CARS.css">
+</head>
+<!--<script src="C:\Users\Shubh Parmar\Desktop\NMIMS\YEAR 3\Semester V\Fundamental of Website Designing\code.jquery.com_jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#byname").click(function(){
+    $("#cars").slideToggle();
+  });
+  $("#byprice").click(function(){
+    $(".slider-container").slideToggle();
+  });
+});
+</script>-->
+<!--
+<script>
+    function addtoCart(item){
+        var x = JSON.parse(localStorage.getItem('cart'));
+        if(x == null){
+            var items = [];
+            items.push(item);
+            localStorage.setItem('cart',JSON.stringify(items))
+        }
+        else{
+            x.push(item)
+            localStorage.setItem('cart',JSON.stringify(x))
+        }
+        alert("ADDED " + item + " to cart")
+    }
+</script>
+-->
+<script src="CARS.js"></script>
+<body><center>
+    <header>
+        <div class="banner-card">
+            <div class="banner-text">
+            <h1>CARS</h1>
+            <nav>
+            <ul>
+                <li><a href="qwerty.html">HOME</a></li>
+                <li><a href="product.html">CART</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+</center><br><br>
+    <h2><center>Featured Products</center></h2>
+    <h4>Filter By:</h4>
+    <input name="carsname" id="cars" placeholder="Search By Name..." onkeyup="search()">
+    <div class="slider-container" ondrag="slider()">
+        <div class="slider">
+          <input type="range" min="20000" max="1000000" value="500000" class="slider" id="priceSlider">
+          <div class="slider-values">
+            <span id="priceStart">₹20,000</span>
+            <span id="priceValue">₹5,00,000</span>
+            <span id="priceEnd">₹10,00,000</span>
+          </div>
+        </div>
+    </div>
+    <b>Fuel:</b>
+    <select name="age" id="age">
+        <option value="1">Petrol</option>
+        <option value="2">Diesel</option>
+        <option value="3">CNG</option>
+    </select><br><br>
+    <b>Drive:</b>
+    <select name="age" id="age">
+        <option value="1">Automatic</option>
+        <option value="2">Manual</option>
+    </select><br>
+
+    <!--<script>
+        const priceSlider = document.getElementById("priceSlider");
+        const priceValue = document.getElementById("priceValue");
+        priceSlider.oninput = function()
+        {
+            const formattedValue = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(this.value);
+            priceValue.textContent = formattedValue;
+        };
+    </script>-->
+    <section class="featured-products">
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Datsun Go</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('beans')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Datsun Go Plus.png" alt="Product 2">
+            <h3>Datsun Go Plus</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('Brinjal')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Datsun Redi Go.png" alt="Product 1">
+            <h3>Datsun Redi Go</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('bottlegourd')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Ford Ecosport.jpeg" alt="Product 2">
+            <h3>Ford Ecosport</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cabbage')">ADD TO CART</button>-->
+        </div>
+        
+        <div class="product">
+            <img src="Ford FREESTYLE.jpeg" alt="Product 2">
+            <h3>Ford FreeStyle</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cauliflower')">ADD TO CART</button>--> 
+        </div>
+
+        <div class="product">
+            <img src="Honda Amaze.jpeg" alt="Product 2">
+            <h3>Honda Amaze</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('ladyfinger')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Honda Brio.jpeg" alt="Product 1">
+            <h3>Honda Brio</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('onion')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Honda City.png" alt="Product 1">
+            <h3>Honda City</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('potato')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Honda Jazz.png" alt="Product 2">
+            <h3>Honda Jazz</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('tomato')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Honda WR-V.png" alt="Product 2">
+            <h3>Honda WR-V</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('spinach')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai AURA.png" alt="Product 2">
+            <h3>Hyundai Aura</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('chilly')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai Creta.png" alt="Product 1">
+            <h3>Hyundai Creta</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('lemon')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai Elite i20.png" alt="Product 1">
+            <h3>Hyundai Elite i20</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('beans')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai Eon.png" alt="Product 2">
+            <h3>Hyundai Eon</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('Brinjal')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai Grand i10.png" alt="Product 1">
+            <h3>Hyundai Grand i10</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('bottlegourd')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai GRAND I10 NIOS.png" alt="Product 2">
+            <h3>Hyundai Grand Nios</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cabbage')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai i10.png" alt="Product 2">
+            <h3>Hyundai i10</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cauliflower')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai i20.png" alt="Product 2">
+            <h3>Hyundai i20</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('ladyfinger')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai i20 Active.jpeg" alt="Product 1">
+            <h3>Hyundai i20 Active</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('onion')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai New Elantra.jpeg" alt="Product 1">
+            <h3>Hyundai Elantra</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('potato')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai NEW I20.jpeg" alt="Product 2">
+            <h3>Hyundai New i20</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('tomato')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai NEW SANTRO.png" alt="Product 2">
+            <h3>Hyundai New Santro</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('spinach')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai Santro Xing.png" alt="Product 2">
+            <h3>Hyundai Santro Xing</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('chilly')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai VENUE.png" alt="Product 1">
+            <h3>Hyundai Venue</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('lemon')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai Verna.png" alt="Product 1">
+            <h3>Hyundai Verna</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('beans')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Hyundai Xcent.png" alt="Product 2">
+            <h3>Hyundai Xcent</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="KIA Seltos.png" alt="Product 1">
+            <h3>KIA Seltos</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('bottlegourd')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="KIA SONET.jpeg" alt="Product 2">
+            <h3>KIA Sonet</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cabbage')">ADD TO CART</button>-->
+        </div>
+        
+        <div class="product">
+            <img src="Mahindra KUV 100.png" alt="Product 2">
+            <h3>Mahindra KUV 100</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cauliflower')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Mahindra Thar.png" alt="Product 2">
+            <h3>Mahindra Thar</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('ladyfinger')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Mahindra XUV 300.png" alt="Product 1">
+            <h3>Mahindra XUV 300</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('onion')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Mahindra XUV 500.png" alt="Product 1">
+            <h3>Mahindra XUV 500</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('potato')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Maruti Alto.png" alt="Product 2">
+            <h3>Maruti Alto</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('tomato')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Maruti Alto 800.png" alt="Product 2">
+            <h3>Maruti Alto 800</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('spinach')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Maruti Alto K10.png" alt="Product 2">
+            <h3>Maruti Alto K10</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('chilly')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="lemon.png" alt="Product 1">
+            <h3>Maruti Baleno</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('lemon')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="beans.png" alt="Product 1">
+            <h3>Maruti Celerio</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('beans')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Brinjal.png" alt="Product 2">
+            <h3>Maruti Celerio X</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('Brinjal')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="bottlegourd.png" alt="Product 1">
+            <h3>Maruti Ciaz</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('bottlegourd')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="cabbage.png" alt="Product 2">
+            <h3>Maruti Dzire</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cabbage')">ADD TO CART</button>-->
+        </div>
+         
+        <div class="product">
+            <img src="cauliflower.png" alt="Product 2">
+            <h3>Maruti Ertiga</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cauliflower')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="ladyfinger.png" alt="Product 2">
+            <h3>Maruti Ignis</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('ladyfinger')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="onion.png" alt="Product 1">
+            <h3>Maruti Wagon-R</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('onion')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="potato.png" alt="Product 1">
+            <h3>Maruti Ritz</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('potato')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="tomato.png" alt="Product 2">
+            <h3>Maruti S-Cross</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('tomato')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="spinach.png" alt="Product 2">
+            <h3>Maruti S-Presso</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('spinach')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="chilly.png" alt="Product 2">
+            <h3>Maruti Swift</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('chilly')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="lemon.png" alt="Product 1">
+            <h3>Maruti Swift Dzire</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('lemon')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="beans.png" alt="Product 1">
+            <h3>Maruti Vitara Brezza</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('beans')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="Brinjal.png" alt="Product 2">
+            <h3>Maruti Wagon R1.0</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('Brinjal')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="bottlegourd.png" alt="Product 1">
+            <h3>Maruti XL6</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('bottlegourd')">ADD TO CART</button>-->
+        </div>
+
+        <div class="product">
+            <img src="cabbage.png" alt="Product 2">
+            <h3>Nissan Magnite</h3>
+            <button onclick="">DETAILS</button>
+            <!--<button onclick="addtoCart('cabbage')">ADD TO CART</button>-->
+        </div>
+        
+        <div class="product">
+            <img src="cauliflower.png" alt="Product 2">
+            <h3>Nissan Micra Active</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="ladyfinger.png" alt="Product 2">
+            <h3>Renault Duster</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="onion.png" alt="Product 1">
+            <h3>Renault Kiger</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="potato.png" alt="Product 1">
+            <h3>Renault Kwid</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="tomato.png" alt="Product 2">
+            <h3>Renault Triber</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="spinach.png" alt="Product 2">
+            <h3>Skoda Rapid</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="chilly.png" alt="Product 2">
+            <h3>Tata Altroz</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="lemon.png" alt="Product 1">
+            <h3>Tata Nexon</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="beans.png" alt="Product 1">
+            <h3>Tata Tiago</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="Brinjal.png" alt="Product 2">
+            <h3>Tata Tigor</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="bottlegourd.png" alt="Product 1">
+            <h3>Toyota Corolla Altis</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="cabbage.png" alt="Product 2">
+            <h3>Toyota Etios</h3>
+            <button onclick="">DETAILS</button>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="cauliflower.png" alt="Product 2">
+            <h3>Toyota Etios Liva</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="ladyfinger.png" alt="Product 2">
+            <h3>Toyota Glanza</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="onion.png" alt="Product 1">
+            <h3>Toyota Yaris</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="potato.png" alt="Product 1">
+            <h3>Volkswagen Ameo</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="tomato.png" alt="Product 2">
+            <h3>Volkswagen Polo</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="spinach.png" alt="Product 2">
+            <h3>Volkswagen Vento</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+        
+    </section>
+    <footer>
+        <p><center>&copy; HARVEST HUB</center></p>
+    </footer>
+</body>
+</html>

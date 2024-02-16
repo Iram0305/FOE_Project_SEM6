@@ -1,0 +1,1020 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <link rel="stylesheet" href="BIKES.css">
+</head>
+<!--
+<script>
+    function addtoCart(item){
+        var x = JSON.parse(localStorage.getItem('cart'));
+        if(x == null){
+            var items = [];
+            items.push(item);
+            localStorage.setItem('cart',JSON.stringify(items))
+        }
+        else{
+            x.push(item)
+            localStorage.setItem('cart',JSON.stringify(x))
+        }
+        alert("ADDED " + item + " to cart")
+    }
+</script>-->
+<script src="BIKES.js"></script>
+<body><center>
+    <header>
+        <div class="banner-card">
+            <div class="banner-text">
+            <h1>BIKES</h1>
+            <nav>
+            <ul>
+                <li><a href="qwerty.html">HOME</a></li>
+                <li><a href="product.html">CART</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+</center><br><br>
+    <h2><center>Featured Products</center></h2>
+    <input name="bikesname" id="bikes" placeholder="Search By Name..." onkeyup="search()">
+    <section class="featured-products">
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj  Pulsar 180cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Avenger 220cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Avenger Cruise 220</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Avenger Street 150</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        <!--<br><br>--> 
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Avenger Street 220</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj CT 100 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Discover 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Discover 100M</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Discover 125cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Discover 125M</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Discover 125ST</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Discover 135cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Discover 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Dominar 400</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Dominar 400 ABS</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Platina Alloy ES100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        <!--<br><br>--> 
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Platina 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Pulsar 135LS</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Pulsar 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Pulsar 180cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Pulsar200 NS200cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Pulsar 220cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Pulsar 220F</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Pulsar AS150</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Pulsar AS200</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Pulsar NS160</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Bajaj Pulsar NS200</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Pulsar RS200</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        <!--<br><br>--> 
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj Pulsar RS200-ABS</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Bajaj V15 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Benelli TNT 300</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Harley-Davidson Iron 883</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Harley-Davidson Street 750</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Harley-Davidson Street 750 ABS</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero CBZ Xtreme 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hero CD Deluxe 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hero Glamour 125cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero HF Deluxe 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hero Hunk 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Hunk Rear Disc 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Ignitor 125cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Karizma R223cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hero Karizma ZMR 223cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hero Passion 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Passion Plus 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Passion Pro 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Passion Alloy 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hero Passion Xpro 110cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hero Splendor 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Splendor iSmart 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hero Splendor iSmart 110cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Splendor Plus 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        <!--<br><br>--> 
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Splendor Pro 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Hero Super Splendor 125cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Honda CB Hornet 160R CBS</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Honda CB Hornet 160R STD</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Honda CB Shine 125cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Honda CB Trigger 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Honda CB Twister 110cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Honda CB Unicorn 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Honda CBF Stunner 125cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Honda CBR 150R 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Honda CBR 250R</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Honda CBR 250R ABS</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        <!--<br><br>--> 
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Honda Dream Yuga 110cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Honda Livo 110cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Hyosung GT250R</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Kawasaki Ninja 650cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>KTM Duke 200cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>KTM Duke 250cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>KTM Duke 390cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>KTM RC 200cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>KTM RC 390cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Mahindra Centuro 110cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Mahindra Mojo 300cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Bullet 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Royal Enfield Bullet Electra 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Royal Enfield Bullet Twinspark</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Bullet Twinspark 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Classic 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Classic 500cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Royal Enfield Classic Chrome 500cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Royal Enfield Classic Desert Storm 500cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Classic Gunmetal Grey 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Royal Enfield Continental GT 535cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Electra 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        <!--<br><br>--> 
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Himalayan 410cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Standard 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Royal Enfield Standard 500cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Royal Enfield Thunderbird 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfield Thunderbird 500cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Royal Enfieldâ€Ž Bullet 350cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Suzuki Gixxer 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Suzuki Gixxer SF 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Suzuki Intruder 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Suzuki Slingshot Plus 125cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Suzuki Zeus 125cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>TVS Apache RR310</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        <!--<br><br>--> 
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>TVS Apache RTR 160 4V Disc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>TVS Apache RTR 160cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>TVS Apache RTR 180cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>TVS Apache RTR 180cc ABS</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>TVS Apache RTR 200 4V Carburetor</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>TVS Apache RTR 200 4V Fi</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>TVS Sport 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>TVS Star City 110cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>TVS Star City Plus 110cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>TVS Star Sport 100cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Yamaha Fazer 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Yamaha Fazer 25 250cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Yamaha FZ 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Yamaha FZ SV2.0 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Yamaha FZ V2.0 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Yamaha FZ16 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Yamaha FZ25 250cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Yamaha FZ 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Yamaha SZR 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Yamaha SZ-RR 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Yamaha YZF-R15 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 2">
+            <h3>Yamaha YZF-R15 2.0 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="DATSUN GO.png" alt="Product 1">
+            <h3>Yamaha YZF-R15 S 150cc</h3>
+            <label>Add Number of Products:</label>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+        <!-- Add more products here -->
+    </section>
+    <footer>
+        <p><center>&copy; HARVEST HUB</center></p>
+    </footer>
+</body>
+</html>
+<!--Lady finger, Spinach, potato, tomato, onion, chilly, lemon, cauliflower, cabbage, bottle gourd, Brinjal, bean-->
