@@ -9,18 +9,16 @@ worksheet = workbook.active
 def login():
     if request.method == 'POST':
         username = request.form['username']
-        password = request.form['password']
+        number = request.form['phone_no']
         email = request.form['email']
-        date = request.form['date']
-        number = request.form['number']
-        confirm_password = request.form['confirmPassword']
-        data = [username, password, confirm_password, email, date, number]
+        password = request.form['password']
+        data = [username, number, email, password]
         worksheet.append(data)
         workbook.save("Sign Up.xlsx")
         print("Username:", username)
         print("Password:", password)
         return redirect("https://rzp.io/l/TL815e3")
-    return render_template('SIGN_UP.html')
+    return render_template('signup.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

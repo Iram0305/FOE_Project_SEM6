@@ -1,4 +1,5 @@
-from flask import Flask, request, render_template
+
+from flask import Flask, request, render_template, redirect
 import openpyxl
 app = Flask(__name__)
 workbook = openpyxl.load_workbook("Login.xlsx")
@@ -13,10 +14,8 @@ def login():
         data = [username, password]
         worksheet.append(data)
         workbook.save("Login.xlsx")
-        print("Username:", username)
-        print("Password:", password)
-        return "Login successful"
-    return render_template('LOGIN.html')
+        return redirect("D:\Iram\College\Year 3\Semester VI\Fundamental of E-Commerce\FOE_Project_SEM6\Shubh\PROJECT\PROJECT\qwerty.html")
+    return render_template('LOGIN PAGE.html')
 
 
 if __name__ == '__main__':
