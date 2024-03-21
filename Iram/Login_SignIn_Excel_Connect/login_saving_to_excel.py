@@ -14,7 +14,7 @@ def login():
         data = [username, password]
         worksheet.append(data)
         workbook.save("Login.xlsx")
-        return redirect("D:\Iram\College\Year 3\Semester VI\Fundamental of E-Commerce\FOE_Project_SEM6\Shubh\PROJECT\PROJECT\qwerty.html")
+
     return render_template('LOGIN PAGE.html')
 
 
