@@ -1,71 +1,113 @@
-function validate() {
-    var username = document.getElementById("name").value;
-    var regex = /^[a-zA-Z0-9]+$/;
+function validate()
+{
+        
+        function validateFullName() {
+            const fullNameInput = document.getElementById('fullName');
+            const fullNameValue = fullNameInput.value;
 
-    if (!regex.test(username)) {
-        alert("PLEASE DO NOT USE SPECIAL CHARACTERS");
-        return false;
-    }
+            if (/^[A-Za-z\s]+$/.test(fullNameValue)) {
+                return true;
+            } else {
+                alert('Full Name should contain only letters and spaces.');
+                return false;
+            }
+        }
+
+        
+        function validatePhoneNumber() {
+            const phoneNumberInput = document.getElementById('number');
+            const phoneNumberValue = phoneNumberInput.value;
+
+            if (/^\d{10}$/.test(phoneNumberValue)) {
+                return true;
+            } else {
+                alert('Phone number should be 10 digits long and contain only numbers.');
+                return false;
+            }
+        }
+
+        
+        function validateUserID() {
+            const userIDInput = document.getElementById('usid');
+            const userIDValue = userIDInput.value;
+
+            if (/^\d+$/.test(userIDValue)) {
+                return true;
+            } else {
+                alert('User ID should contain only numbers.');
+                return false;
+                
+            }
+        }
+
+        
+        function validateEmail() {
+            const emailInput = document.getElementById('mail');
+            const emailValue = emailInput.value;
+
+            if (/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(emailValue)) {
+                return true;
+            } else {
+                alert('Please enter a valid Email ID.');
+                return false;
+            }
+        }
+
+        
+        function validatePassword() {
+            const passwordInput = document.getElementById('password');
+            const passwordValue = passwordInput.value;
+
+            
+            if (/^(?=.*[A-Za-z])(?=.*\d).{8,}$/.test(passwordValue)) {
+                return true;
+            } else {
+                alert('Password should be at least 8 characters long and alphanumeric.');
+                return false;
+            }
+        }      
+
+        
+        function validateDateOfBirth() {
+            const dobInput = document.getElementById('dob');
+            const dobValue = dobInput.value;
+
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(dobValue)) {
+            alert('Date of Birth should be in the format YYYY-MM-DD.');
+            return false;
+            }
+
+            // Calculate the user's age
+            const birthDate = new Date(dobValue);
+            const currentDate = new Date();
+            const age = currentDate.getFullYear() - birthDate.getFullYear();
+
+            // Check if the user is above 18 years old
+            if (age < 18) {
+                alert('You must be at least 18 years old to register.');
+                return false;
+            }
+
     return true;
-}
-function validate() {
-    var username = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    var regexUsername = /^[a-zA-Z0-9]+$/;
-    var regexPhone = /^[0-9]{10}$/; 
+        }
 
-    if (!regexUsername.test(username)) {
-        alert("PLEASE DO NOT USE SPECIAL CHARACTERS IN THE USERNAME");
-        return false;
+        
+        function submitForm() {
+            if (
+                validateFullName() &&
+                validatePhoneNumber() &&
+                validateUserID() &&
+                validateEmail() &&
+                validatePassword() &&                
+                validateDateOfBirth()
+            ) {
+                alert('Form submitted successfully!');
+            } else {
+                alert('Form validation failed. Please check the fields.');
+            }
+        }
+
+        
+        const submitButton = document.getElementById('submitButton');
+        submitButton.addEventListener('click', submitForm);
     }
-
-    if (!regexPhone.test(phone)) {
-        alert("PHONE NUMBER SHOULD HAVE 10 DIGITS");
-        return false;
-    }
-
-    return true;
-}
-
-function validate() {
-    var email = document.getElementById("email").value;
-    var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!regexEmail.test(email)) {
-        alert("INVALID EMAIL ADDRESS");
-        return false;
-    }
-
-    return true;
-}
-
-
-function validate() {
-    var password = document.getElementById("pass").value;
-    var confirmPassword = document.getElementById("passcon").value;
-    var regexPassword = /^.{8,}$/;
-
-    if (!regexPassword.test(password)) {
-        alert("PASSWORD MUST BE ATLEAST 8 CHARACTERS LONG");
-        return false;
-    }
-
-    if (password !== confirmPassword) {
-        alert("NO MATCH. PLEASE ENTER SAME PASSWORDS IN BOTH INPUT FIELDS");
-        return false;
-    }
-
-    return true;
-}
-function validate() {
-    var dob = document.getElementById("dob").value;
-    var regexDOB = /^\d{4}-\d{2}-\d{2}$/;
-
-    if (!regexDOB.test(dob)) {
-        alert("PLEASE ENTER DATE OF BIRTH IN DD-MM-YYYY FORMAT");
-        return false;
-    }
-
-    return true;
-}
-
