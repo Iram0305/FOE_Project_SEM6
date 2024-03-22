@@ -1,0 +1,155 @@
+body, h2, p {
+    margin: 0;
+    padding: 0px;
+    text-align: left;
+}
+h1{
+    margin: 0;
+    padding: 0px;
+    text-align: left;
+    color: white;
+    font-size: 10px;
+}
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+header {
+    /*background-image: url("C:\Users\Shubh Parmar\Desktop\PROJECT\vegetables footer.jpg");*/
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+    padding: 25px;
+    height: 70px;
+    background-image: url(green.png);
+    background-size: cover;
+    background-position: center;
+}
+.banner-card{
+    position: relative;
+}
+.banner-card img
+{
+    opacity: 100%;
+    max-width: 200%;
+    height: 100%;
+
+}
+.banner-text{
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    /*margin-left: 269px;*/
+}
+nav ul {
+    list-style: none;
+    padding: 0%;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.featured-products {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product {
+    border: 1px solid #18e1b9;
+    padding: 20px;
+    padding-bottom: 2px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.product img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+button:hover {
+    background-color: #45a049;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+footer a {
+    color: #4caf50;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    background-color: #bdd0cc;
+    padding: 15px;
+    color: #45a049;
+    font-size: 35px;
+}
+h3{
+    font-size: 25px;
+}
+div{
+    align-items: center;
+}
+input{
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 12px;
+    padding-right: 1005px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 25px;
+    border: 2px solid #18e1b9;
+    font-size: 15px;
+}
+h4{
+    margin-left: 25px;
+    color: #45a049;
+    font-size: 25px;
+}
+#cars{
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+#filter1{
+    margin-left: 25px;
+}
+b{
+    margin-left: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+#option{
+    padding-right: 10px;
+}
+label{
+    display: none;
+    text-align: left;
+}
