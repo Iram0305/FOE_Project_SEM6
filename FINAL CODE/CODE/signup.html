@@ -1,0 +1,128 @@
+<html>
+<head>
+  <title> 
+    HarvestHub 
+  </title> 
+  <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+  <style>
+    /* Style the body */
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+
+    .bg-image {
+      
+      
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.30)),url(car\ 3.png);
+      background-size: cover;
+      background-position: center;
+
+      /* Add the blur effect */
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .login-container {
+      width: 380px;
+      
+      padding: 40px;
+      background-color: rgba(54, 52, 52, 0.8);
+      border-radius: 25px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #e0eae1;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #e1e7e1;
+      font: bolder;
+    }
+
+    .form-group input {
+      width: 200px;
+      height: 30px;
+      padding: 5px;
+      border: 1px solid #8de78d;
+      border-radius: 2px;
+    }
+
+    .form-group button {
+     width: 40px;
+     height:40px;
+     
+      background-color: #d6e5d6;
+      color: #e8dfdf;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .form-group textarea {
+      border-radius: 2px;
+    }
+
+    .form-group button:hover {
+      background-color: #1a881a;
+    }
+  </style>
+</head>
+<script src="signup.js"></script>
+<script src="C:\Users\Shubh Parmar\Desktop\NMIMS\YEAR 3\Semester V\Fundamental of Website Designing\FWD_PROJECT\insert.php"></script>
+<body>
+    <div class="bg-image"></div>
+    <div class="login-container">
+        <h2>SIGN UP</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <center><label for="name">FULL NAME</label></center>
+                <center><input type="text" id="name" name="name" placeholder="Enter your Full Name" required></center>
+            </div>
+            <div class="form-group">
+                <center><label for="add">ADDRESS</label></center>
+                <center><textarea rows="3" cols="30"   type="text" id="add" name="address" placeholder="Enter your Address" required></textarea></center>
+            </div>
+            <div class="form-group">
+                <center><label for="username">PHONE NUMBER</label></center>
+                <center><input type="text" id="no" name="phone_no" placeholder="Enter your Phone Number" required></center>
+            </div>
+            <div class="form-group">
+                <center><label for="username">USERNAME</label></center>
+                <center><input type="text" id="username" name="username" placeholder="Enter your username" required></center>
+            </div>
+            <div class="form-group">
+                <center><label for="pasword">PASSWORD</label></center>
+                <center><input type="password" id="password" name="password" placeholder="Enter your password" required></center>
+            </div>
+            <div class="form-group">
+                <center><a href="index.html"><input type="submit" value="submit" class="btn" name="submit" </a></center>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
