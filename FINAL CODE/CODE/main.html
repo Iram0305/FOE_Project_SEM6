@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ca7b7b;
+        }
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.25)),url(image1.jpg);
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px);
+            -webkit-filter: blur(4px);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+
+
+        .container {
+            text-align: center;
+            padding-top: 20px;
+            padding-right: 500px;
+            
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            width: 150px;
+        }
+
+        .btn-login {
+            background-color: #a4a9a4;
+        }
+
+        .btn-signup {
+            background-color: #a4a9a4;
+        }
+        p{
+            font-size: 70px;
+            color: white;
+            background-color:#adb1ad;
+            font-family: Arial, Helvetica, sans-serif ;
+            padding-left: 200px;
+            padding-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="bg-image"></div>
+    <p><b>MOIRSH GARAGES</b></p><br><br><br>
+    <div class="container">
+        <a href="login.html" class="btn btn-login">LOGIN</a>
+        <a href="signup.html" class="btn btn-signup">SIGN UP</a>
+    </div>
+</body>
+</html>
